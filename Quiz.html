@@ -20,6 +20,14 @@
     </div>
   </div>
   <script>
+    $(".alert alert-danger wrong-msg").hide();
+    $(".alert alert-success correct-msg").hide();
+    $(".btn-right").on('click', function() {
+      $(".correct-msg").slideDown();
+    });
+    $(".btn-wrong").on('click', function() {
+      $(".wrong-msg").slideDown();
+    });
     /* Your code goes here */
   </script>
 </body>
