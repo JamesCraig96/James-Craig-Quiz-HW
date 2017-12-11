@@ -20,8 +20,8 @@
     </div>
   </div>
   <script>
-    $(".alert alert-danger wrong-msg").hide();
-    $(".alert alert-success correct-msg").hide();
+    $(".alert").hide();
+    $(".alert").hide();
     $(".btn-right").on('click', function() {
       $(".correct-msg").slideDown();
       $(".wrong-msg").hide();
@@ -29,6 +29,9 @@
     $(".btn-wrong").on('click', function() {
       $(".wrong-msg").slideDown();
       $(".correct-msg").hide();
+    });
+    $(".btn").on('click', function() {
+      $(this).addClass("active");
     });
     /* Your code goes here */
   </script>
